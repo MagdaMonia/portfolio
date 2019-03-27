@@ -1,0 +1,50 @@
+@import "variables";
+
+@mixin bannerText {
+  color: $colorBannerText;
+  font-weight: $fontWeightBlack;
+  text-transform: uppercase;
+}
+@mixin underline {
+  content: '';
+  height: 8px;
+  display: block;
+  background: #000;
+  width: 168px;
+}
+
+@mixin header-1 {
+  color: $colorText;
+  font-size: $font-size-header-1;
+  font-weight: $fontWeightBlack;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+@mixin header-1S {
+  font-size: $font-size-titleS;
+}
+@mixin header-1XS {
+  font-size: $font-size-titleXS;
+}
+@mixin header-1XXS {
+  font-size: $font-size-titleXXS;
+}
+
+@mixin header-2 {
+  @include header-1;
+  font-size: $font-size-header-2;
+  margin-bottom: 24px;
+}
+
+@mixin paragraph {
+  color: $colorText;
+  font-size: $font-size-paragraph;
+  font-weight: $fontWeightMedium;
+  line-height: 30px;
+}
+@mixin content {
+  max-width: 944px;
+  width: 100%;
+  height: 100%;
+}

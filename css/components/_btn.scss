@@ -1,0 +1,114 @@
+@import "../variables";
+
+
+.btn-more {
+  color: $colorBtn;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-more__text {
+  color: $colorBtn;
+  font-weight: $fontWeightExtraBold;
+  font-size: $font-size-btn;
+
+}
+
+.btn-more__icon {
+  font-weight: $fontWeightMedium;
+  font-size: $font-size-btnMore;
+  text-align: center;
+}
+
+.btn {
+  padding: 4px 10px;
+  background: $colorBtn;
+  display: inline-flex;
+  text-decoration: none;
+  vertical-align: top;
+  min-width: 22px;
+  justify-content: flex-end;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+}
+
+.btn--rounded {
+  border-radius: 25px;
+}
+
+.btn--animated {
+  //max-width: 40px;
+  max-width: 42px;
+  transition: .6s all;
+  overflow: hidden;
+  justify-content: flex-end;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.btn--animated:hover {
+  max-width: 200px;
+}
+
+.btn__label {
+  line-height: 22px;
+  color: $colorBtbHover;
+  font-size: 1.4rem;
+  font-weight: $fontWeightBold;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.btn__icon {
+  line-height: 22px;
+  color: $colorIcons;
+  font-size: 2.2rem;
+}
+
+.btn--primary {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 206px;
+  background: $colorBtnCV;
+  color: $colorBtn;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+}
+
+.btn__text {
+  text-transform: uppercase;
+  display: inline-block;
+  color: $colorBtn;
+  font-weight: $fontWeightExtraBold;
+  font-size: $font-size-btn;
+  margin-left: 10px;
+}
+
+.btn-menu {
+  font-size: 16px;
+  background: none;
+}
+
+@media (min-width: 900px) {
+  .btn-menu {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
+
+.btn-close {
+  font-size: 16px;
+  background: none;
+}
+

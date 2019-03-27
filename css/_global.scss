@@ -1,0 +1,90 @@
+@import "variables";
+@import "mixin";
+
+html {
+  font-family: $fontFamily;
+  font-size: 62.5%;
+  background: $colorBackground;
+}
+
+.main-content {
+  @include content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section__content {
+  box-sizing: border-box;
+  @include content;
+  padding: 42px;
+}
+
+//-----------------------------------------------
+
+.tag {
+  font-weight: $fontWeightBold;
+  color: $colorPoint;
+  text-transform: uppercase;
+  font-size: $font-size-btn;
+  background: $colorBtn;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+  padding: 8px 25px;
+  border-radius: 25px;
+}
+
+.label {
+  color: $colorText;
+  font-weight: $fontWeightExtraBold;
+  font-size: $font-size-paragraph;
+  line-height: 32px;
+}
+
+.input {
+  font-weight: $fontWeightMedium;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me__description {
+  @include paragraph;
+}
+
+.about-me__details {
+  margin-left: 32px;
+  flex: 2;
+}
+
+
+/* ----------------------------------- */
+/* ---------- MEDIA QUERIES ---------- */
+/* ----------------------------------- */
+
+@media (max-width: 1000px) {
+  .main-content {
+    padding: 0 42px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me__details {
+    margin-left: 0;
+  }
+}

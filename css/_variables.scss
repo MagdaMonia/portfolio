@@ -1,0 +1,51 @@
+// ------------- GLOBAL -------------
+
+$fontFamily: (Montserrat, sans-serif);
+
+// -------------- IMAGE --------------
+
+$banner-background: "../img/banner-background.png";
+$avatar: "../img/image.png";
+$portfolio-img: "../img/portfolio.png";
+
+// -------------- FONT SIZE --------------
+
+$font-size-paragraph: 1.6rem;
+$font-size-logo: 1.4rem;
+$font-size-menu: 1.2rem;
+$font-size-header-1: 7.2rem;
+$font-size-titleS: 6.2rem;
+$font-size-titleXS: 5.2rem;
+$font-size-titleXXS: 3.2rem;
+$font-size-header-2: 3.2rem;
+$font-size-subtitle: 1.8rem;
+$font-size-btn: 1.4rem;
+$font-size-btn-cv: 1.6rem;
+$font-size-btnMore: 2.8rem;
+
+
+// -------------- FONT WEIGHT --------------
+
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+$fontWeightExtraBold: 800;
+$fontWeightBlack: 900;
+
+// -------------- COLORS --------------
+
+$colorPrimary: #2845DB;
+
+$colorBackground: rgba(0, 74, 235, 0.05);
+$colorTopBar: #FFFFFF;
+$colorLogo: $colorPrimary;
+$colorMenu: #909090;
+$colorBannerText: #FFFFFF;
+$colorBtn: #FFFFFF;
+$colorText: #000000;
+$colorH3: #000000;
+$colorPoint: $colorPrimary;
+$colorIcons: $colorPrimary;
+$colorBtbHover: #5F5F5F;
+$colorBtnCV: $colorPrimary;

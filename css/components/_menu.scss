@@ -1,0 +1,45 @@
+@import "../variables";
+
+.menu__item {
+  margin-left: 30px;
+  font-size: $font-size-menu;
+  display: inline-block;
+  font-weight: $fontWeightExtraBold;
+}
+
+.menu__item--mobile {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  color: $colorMenu;
+  text-decoration: none;
+  &:hover {
+    color: $colorPrimary;
+  }
+}
+
+
+.menu__link--mobile {
+  &:hover {
+    background: $colorMenu;
+    color: $colorPrimary;
+    padding: 10px;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 900px) {
+  .btn-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,78 @@
+@import "../variables";
+@import "../mixin";
+
+.banner {
+  height: 100vh;
+  background: #254ED1 url($banner-background) no-repeat;
+  background-size: cover;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__title, .banner__subtitle {
+  @include bannerText;
+}
+
+.banner__title {
+  display: inline-block;
+  line-height: 66px;
+  font-size: $font-size-header-1;
+
+  &:after {
+    @include underline;
+    background-color: #fff;
+    margin-top: 8px;
+    width: 35%;
+  }
+}
+
+.banner__subtitle {
+  font-size: $font-size-subtitle;
+  line-height: 50px;
+}
+
+/* ----------------------------------- */
+/* ---------- MEDIA QUERIES ---------- */
+/* ----------------------------------- */
+
+@media (max-width: 800px) {
+
+  .banner__title {
+    @include header-1S;
+  }
+  .banner__subtitle {
+
+  }
+}
+
+@media (max-width: 600px) {
+
+  .banner__title {
+    @include header-1XS;
+  }
+}
+
+@media (max-width: 455px) {
+  .banner__title {
+    font-size: 4.2rem;
+    line-height: 40px;
+  }
+  .banner__subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner__title {
+    @include header-1XXS;
+  }
+
+  .banner__subtitle {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+
+}

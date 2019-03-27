@@ -1,0 +1,51 @@
+@import "../mixin";
+
+.portfolio {
+  display: flex;
+  margin-top: 64px;
+}
+
+.portfolio__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio__description {
+  @include paragraph;
+}
+
+.portfolio__details {
+  margin-left: 70px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+/* ----------------------------------- */
+/* ---------- MEDIA QUERIES ---------- */
+/* ----------------------------------- */
+
+@media (max-width: 976px) {
+  .portfolio {
+    flex-direction: column;
+  }
+  .portfolio__details {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section__content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .section__content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
